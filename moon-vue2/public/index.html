@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+<style>
+  * {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-family: 'Noto Sans SC', sans-serif, 'iconfont';
+  }
+
+  html {
+    overflow: hidden;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* "VariableFont", */
+  /* @font-face {
+    font-family: "VariableFont";
+    src: url("./ttf/Raleway-VariableFont_wght.ttf")
+  } */
+
+  @font-face {
+    font-family: 'iconfont';
+    src: url('./ttf/iconfont.ttf') format('truetype');
+  }
+
+
+  @media screen and (min-width :1960px) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width :1960px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width :1280px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 759px) {
+    html {
+      font-size: 12px;
+    }
+  }
+
+  @keyframes load-up {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes load-down {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
+</style>
+
+</html>
